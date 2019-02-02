@@ -3,16 +3,20 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { TableroComponent } from './scenes/tablero/tablero.component';
+import { BackendService } from './services/backend.service';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TableroComponent,
+    TableroComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [BackendService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
